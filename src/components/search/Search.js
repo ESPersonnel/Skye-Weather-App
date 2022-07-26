@@ -15,6 +15,7 @@ const Search = ({ onSearchChange }) => {
             return {
               options: response.data.map((city) => {
                 return {
+                    // search suggestions are displayed in the dropdown
                   value: `${city.latitude} ${city.longitude}`,
                   label: `${city.name}, ${city.countryCode}`,
                 };
