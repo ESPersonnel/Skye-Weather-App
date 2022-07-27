@@ -1,5 +1,5 @@
 import React from "react";
-import "./CurrentWeather.css";
+import "../../App.css";
 
 const CurrentWeather = ({ data }) => {
   return (
@@ -12,7 +12,7 @@ const CurrentWeather = ({ data }) => {
         <img
           alt="weather"
           className="weather-icon"
-          src={`icons/${data.weather[0].icon}.png`}
+          src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`}
         />
       </div>
       <div className="bottom">
