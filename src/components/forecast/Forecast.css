@@ -5,7 +5,11 @@
   
   .daily-item {
     background-color: #f5f5f5;
-    border-radius: 15px;
+    /* border-radius: 4px; */
+    border-radius: 4px;
+background: #61e5dc;
+box-shadow:  6px -6px 12px #52c3bb,
+             -6px 6px 12px #70fffd;
     height: 40px;
     margin: 5px;
     align-items: center;
