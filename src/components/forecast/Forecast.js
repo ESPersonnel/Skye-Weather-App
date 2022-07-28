@@ -7,6 +7,7 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import "../../App.css";
+import { Link } from "react-router-dom";
 
 const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -16,6 +17,7 @@ const Forecast = ({ data }) => {
   
   return (
     <>
+      <Link to="/" className="btn">Back to Weather</Link>
       <label className="title">Forecast</label>
       <Accordion allowZeroExpanded>
         {data.list.splice(0, 7).map((item, idx) => (
