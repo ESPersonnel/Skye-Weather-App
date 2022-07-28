@@ -5,6 +5,7 @@ import Forecast from "./components/forecast/Forecast";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
 import ReactSwitch from "react-switch";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export const ThemeContext = createContext(null)
 
@@ -42,12 +43,18 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="container" id={theme}>
         <Search onSearchChange={handleOnSearchChange} />
-        {currentWeather && <CurrentWeather data={currentWeather} />}
-        {forecast && <Forecast data={forecast} />}
+        {/* {currentWeather && <CurrentWeather data={currentWeather} />}
+        {forecast && <Forecast data={forecast} />} */}
+        <BrowserRouter>
+          <Routes>
+            {/* <Route path="/" element={<Search onSearchChange={handleOnSearchChange} />} /> */}
+            <Route path="/" element={currentWeather && <CurrentWeather data={currentWeather} />} />
+            <Route path="/forecast" element={forecast && <Forecast data={forecast} />} />
+          </Routes>
+        </BrowserRouter>
         <div className="switch">
-          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
-        </div>
-
+            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+          </div>
       </div>
     </ThemeContext.Provider>
   );
