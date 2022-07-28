@@ -11,11 +11,11 @@ body {
   font-family: 'Belleza', sans-serif;
 }
 
-/* #light {
+/* body #light {
   background-color: #61e5dc;
 }
 
-#dark {
+body #dark {
   background-color: #2b245c;
 } */
 
@@ -45,6 +45,47 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+
+/* Button */
+.btn {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  margin: 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  background: #61e5dc;
+  border: 1px solid #61e5dc;
+  transition: all .3s;
+  box-shadow:  12px -12px 24px #52c3bb,
+               -12px 12px 24px #70fffd;    
+ }
+
+ #light .btn {
+  background: #61e5dc;
+  box-shadow:  12px -12px 24px #52c3bb,
+               -12px 12px 24px #70fffd;    
+  color: #2b245c;
+
+ }
+
+ #dark .btn {
+  background: #2b245c;
+box-shadow:  12px -12px 24px #251f4e,
+             -12px 12px 24px #31296a;
+color: #61e5dc;
+
+ }
+ 
+ .btn:hover {
+  border: 1px solid white;
+ }
+ 
+ .btn:active {
+  box-shadow: 4px 4px 12px #c5c5c5,
+              -4px -4px 12px #ffffff;
+ }
 
 
 
