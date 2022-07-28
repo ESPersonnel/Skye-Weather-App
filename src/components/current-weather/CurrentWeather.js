@@ -1,9 +1,11 @@
 import React from "react";
 import "../../App.css";
+import { Link } from "react-router-dom";
 
 const CurrentWeather = ({ data }) => {
   return (
     <div className="weather">
+      <Link to='/forecast' className='btn'>Forecast</Link>
       <div className="top">
         <div>
           <p className="city">{data.city}</p>
