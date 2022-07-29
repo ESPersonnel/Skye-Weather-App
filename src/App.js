@@ -2,6 +2,7 @@ import React, { useState, createContext } from "react";
 import Search from "./components/search/Search";
 import CurrentWeather from "./components/current-weather/CurrentWeather";
 import Forecast from "./components/forecast/Forecast";
+import Title from "./components/Title";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
 import ReactSwitch from "react-switch";
 import "./App.css";
@@ -42,6 +43,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="container" id={theme}>
+        <Title />
         <Search onSearchChange={handleOnSearchChange} />
         {/* {currentWeather && <CurrentWeather data={currentWeather} />}
         {forecast && <Forecast data={forecast} />} */}
