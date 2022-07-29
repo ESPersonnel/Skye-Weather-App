@@ -15,7 +15,19 @@ The application will use OpenWeatherMap API to retrieve the current weather for 
 
 ### Live Link
 
+[Skye Weather](https://skye-weather-app.vercel.app/)
+
 ### Setup
+
+Install dependencies:
+
+    npm install
+
+Start the server:
+
+    npm start
+
+
 
 ## Deliverables
 
@@ -49,9 +61,26 @@ Now with React, these are some of the deliverables that I would love to add to t
 
 ## Progress
 
+- The application can search for a city in the search bar.
+- The application can fetch data from the openweathermap API. (Free version)
+- The application displays:
+    - the city's name
+    - temperature in °C
+    - an icon describing the condition of the weather
+    - the description of the weather (cloudy, sunny)
+    - the day's humidity
+    - the wind speed.
+- Currently working on getting the date and time to function.
+
 ## Screenshots
 
+<img src="./src/images/screenshots/home.png" width="600px">
+
+<img src="./src/images/screenshots/forecast.png" width="600px">
+
+
 ## Known Bugs
+
 
 ## Licence
 
