@@ -80,7 +80,9 @@ Now with React, these are some of the deliverables that I would love to add to t
 
 
 ## Known Bugs
+> Bug 1
 
+The background cannot toggle between dark and light mode.
 
 ## Licence
 
