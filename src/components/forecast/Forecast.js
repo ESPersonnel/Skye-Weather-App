@@ -17,8 +17,10 @@ const Forecast = ({ data }) => {
   
   return (
     <>
-      <Link to="/" className="btn">Back to Weather</Link>
-      <label className="title">Forecast</label>
+      {/* <div className="title-card"><label className="title">Forecast</label></div> */}
+      <div className="btn-card">
+      <Link to="/" className="btn" style={{"margin": 15}}>Back to Weather</Link>
+      </div>
       <Accordion allowZeroExpanded>
         {data.list.splice(0, 7).map((item, idx) => (
           <AccordionItem key={idx}>
