@@ -26,6 +26,7 @@ code {
 
 
 
+
 /* App */
 
 .container {
@@ -37,6 +38,7 @@ code {
 
 
 
+
 /* Switch */
 .switch {
   display: flex;
@@ -45,6 +47,8 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+
 
 
 /* Button */
@@ -87,6 +91,85 @@ color: #61e5dc;
               -4px -4px 12px #ffffff;
  }
 
+ .btn-card {
+  margin-top: 30px;
+ }
+
+
+
+
+ /* Title */
+ .title-card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 20px;
+  background-color: #61e5dc;
+  color: #2b245c;
+  font-size: 30px;
+  font-weight: bold;
+  transition: all .3s;
+  /* text-shadow: 0 0 10px #52c3bb,
+               0 0 10px #70fffd;
+  animation: shadow 5s ease-out infinite normal; */
+
+  /* box-shadow:  12px -12px 24px #52c3bb,
+               -12px 12px 24px #70fffd;     */
+ }
+
+.title1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 20px;
+  animation: breathing 5s ease-in-out infinite normal;
+}
+
+/* Scaling Animations to the title */
+@keyframes breathing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Text shadow animations on the title */
+@keyframes shadow {
+  0% {
+    text-shadow: 0 0 10px #52c3bb,
+                 0 0 10px #70fffd;
+  }
+  50% {
+    text-shadow: 0 0 20px #52c3bb,
+                 0 0 20px #70fffd;
+  }
+  100% {
+    text-shadow: 0 0 10px #52c3bb,
+                 0 0 10px #70fffd;
+  }
+}
+
+
+#light .title-card1 {
+  background-color: #61e5dc;
+  color: #2b245c;
+  box-shadow:  12px -12px 24px #52c3bb,
+               -12px 12px 24px #70fffd;    
+ }
+
+#dark .title-card1 {
+  background-color: #2b245c;
+  color: #61e5dc;
+  box-shadow:  12px -12px 24px #251f4e,
+                -12px 12px 24px #31296a;
+}
+
+
 
 
 /* CurrentWeather */
@@ -94,6 +177,7 @@ color: #61e5dc;
 .weather {
   /* width: 750px; */
   border-radius: 4px;
+  transition: all .3s;
   /* background: #61e5dc;
   box-shadow:  12px -12px 24px #52c3bb,
                -12px 12px 24px #70fffd;    margin: 20px auto 0 auto; */
@@ -185,7 +269,13 @@ color: #61e5dc;
 
 
 
+
 /* Forecast */
+.title-card {
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
 
 .title {
   font-size: 23px;
@@ -206,6 +296,7 @@ box-shadow:  6px -6px 12px #52c3bb,
   display: flex;
   font-size: 14px;
   padding: 5px 20px;
+  transition: all .3s;
 }
 
 #light .daily-item {
