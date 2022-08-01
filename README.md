@@ -70,6 +70,7 @@ Now with React, these are some of the deliverables that I would love to add to t
     - the description of the weather (cloudy, sunny)
     - the day's humidity
     - the wind speed.
+- The dark mode currently works except for the background.
 - Currently working on getting the date and time to function.
 
 ## Screenshots
