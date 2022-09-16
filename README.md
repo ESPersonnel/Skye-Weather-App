@@ -87,6 +87,6 @@ The background cannot toggle between dark and light mode.
 
 ## Licence
 
-The MIT License (MIT)
+The MIT Licence (MIT)
 
-- [License](./LICENSE)
+- [Licence](./LICENCE)
